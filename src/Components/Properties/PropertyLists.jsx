@@ -13,33 +13,35 @@ const PropertyLists = () => {
     const [postPerPage] = useState(6)
 
     
+
     useEffect(()=>{
-        const options = {
-          method: 'GET',
-          url: 'https://bayut.p.rapidapi.com/properties/list',
-          params: {
-            locationExternalIDs: '5002,6020',
-            purpose: 'for-rent',
-            hitsPerPage: '25',
-            page: '0',
-            lang: 'en',
-            sort: 'city-level-score',
-            rentFrequency: 'monthly',
-            categoryExternalID: '4'
-          },
-          headers: {
-            'X-RapidAPI-Key': 'e039675d13mshcbc9a408bc6e19ep162dffjsn218f67500e79',
-            'X-RapidAPI-Host': 'bayut.p.rapidapi.com'
-          }
-        };
-        
-        axios.request(options).then(function (response) {
-            console.log(response.data.hits);
-            setEstates(response.data.hits)
-        }).catch(function (error) {
-            console.error(error);
-        });
-    }, [options])
+        const fetchMap = async () => {
+            try{
+                const res = await axios.request({
+                    method: 'GET',
+                    url: 'https://bayut.p.rapidapi.com/properties/list',
+                    params: {
+                      locationExternalIDs: '5002,6020',
+                      purpose: 'for-rent',
+                      hitsPerPage: '25',
+                      page: '0',
+                      lang: 'en',
+                      sort: 'city-level-score',
+                      rentFrequency: 'monthly',
+                      categoryExternalID: '4'
+                    },
+                    headers: {
+                      'X-RapidAPI-Key': 'e039675d13mshcbc9a408bc6e19ep162dffjsn218f67500e79',
+                      'X-RapidAPI-Host': 'bayut.p.rapidapi.com'
+                    }
+                  })
+                setEstates(res.data.hits)
+            } catch(error) {
+                console.error(error)
+            }
+        }
+        fetchMap()
+    }, [])
 
     const indexOfLastPost = currentPage * postPerPage
     const indexOfFirst = indexOfLastPost - postPerPage
