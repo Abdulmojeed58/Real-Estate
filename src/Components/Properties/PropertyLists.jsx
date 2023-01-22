@@ -10,7 +10,7 @@ const PropertyLists = () => {
 
     const [estates, setEstates] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
-    const [postPerPage, setPostPerPage] = useState(6)
+    const [postPerPage] = useState(6)
 
     const options = {
       method: 'GET',
@@ -38,7 +38,7 @@ const PropertyLists = () => {
         }).catch(function (error) {
             console.error(error);
         });
-    }, [])
+    }, [options])
 
     const indexOfLastPost = currentPage * postPerPage
     const indexOfFirst = indexOfLastPost - postPerPage
