@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
+import React, { useState, useRef } from 'react';
 import { MapContainer, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 
@@ -35,8 +34,8 @@ import 'leaflet/dist/leaflet.css';
 
 
 export const MapTiles = () => {
-  const [center, setCenter] = useState({ lat: 9.0820, lng: 8.6753})
-  const ZOOM_LEVEL = 9;
+  const [center] = useState({ lat: 9.0820, lng: 8.6753})
+  const ZOOM_LEVEL = 5;
   const mapRef = useRef();
 
   return (
