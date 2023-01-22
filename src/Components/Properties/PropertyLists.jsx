@@ -12,26 +12,27 @@ const PropertyLists = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage] = useState(6)
 
-    const options = {
-      method: 'GET',
-      url: 'https://bayut.p.rapidapi.com/properties/list',
-      params: {
-        locationExternalIDs: '5002,6020',
-        purpose: 'for-rent',
-        hitsPerPage: '25',
-        page: '0',
-        lang: 'en',
-        sort: 'city-level-score',
-        rentFrequency: 'monthly',
-        categoryExternalID: '4'
-      },
-      headers: {
-        'X-RapidAPI-Key': 'e039675d13mshcbc9a408bc6e19ep162dffjsn218f67500e79',
-        'X-RapidAPI-Host': 'bayut.p.rapidapi.com'
-      }
-    };
-
+    
     useEffect(()=>{
+        const options = {
+          method: 'GET',
+          url: 'https://bayut.p.rapidapi.com/properties/list',
+          params: {
+            locationExternalIDs: '5002,6020',
+            purpose: 'for-rent',
+            hitsPerPage: '25',
+            page: '0',
+            lang: 'en',
+            sort: 'city-level-score',
+            rentFrequency: 'monthly',
+            categoryExternalID: '4'
+          },
+          headers: {
+            'X-RapidAPI-Key': 'e039675d13mshcbc9a408bc6e19ep162dffjsn218f67500e79',
+            'X-RapidAPI-Host': 'bayut.p.rapidapi.com'
+          }
+        };
+        
         axios.request(options).then(function (response) {
             console.log(response.data.hits);
             setEstates(response.data.hits)
