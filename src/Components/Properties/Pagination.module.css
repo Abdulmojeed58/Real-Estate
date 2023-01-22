@@ -1,0 +1,29 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    width: max-content;
+    margin-inline: auto;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+
+}
+
+.pagination p {
+    padding: .8rem;
+    color: #F4511E;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 1);
+}
+
+.pagination p:hover {
+    color: white;
+    background-color: #F4511E;
+}
+
+.pagination .next {
+    border: none;
+}
+

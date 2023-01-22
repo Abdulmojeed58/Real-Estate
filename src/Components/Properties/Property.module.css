@@ -1,0 +1,57 @@
+.property {
+    /* margin-top: 2rem; */
+    width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.property > img {
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.property > div {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.property .name {
+    margin-inline: 1rem;
+}
+
+.property > p {
+    color: grey;
+    margin-inline: 1rem;
+}
+
+.property .price {
+    color: #F4511E;
+    margin-inline: 1rem;
+    font-size: 1.2rem;
+}
+
+.property > div > div {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.property > div img {
+    width: 20px;
+}
+
+.property .middle {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}

@@ -1,0 +1,87 @@
+.about {
+    min-height: 75vh;
+    width: 85vw;
+    margin-inline: auto;
+    /* margin-top: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    /* background-color: red; */
+}
+
+.about .title {
+    font-weight: 700;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.about .line {
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: #F4511E;
+    margin-bottom: 1rem;
+}
+
+.about > div {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about img.place {
+    min-width: 250px;
+    width: 25%;
+}
+
+.about ul {
+    /* background-color: yellow; */
+    width: 60%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,     minmax(180px, 1fr));
+    /* background-color: red; */
+}
+
+.about ul li {
+    /* background-color: blue; */
+    list-style: none;
+}
+
+.about li .vector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px black;
+}
+
+.about ul li img {
+    width: 2rem;
+    display: block;
+}
+
+.about li .vecName {
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+
+@media(max-width: 830px) {
+    .about > div {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 770px) {
+    .about ul {
+        width: 80%;
+    }
+}
