@@ -1,0 +1,109 @@
+.option {
+    /* background-color: red; */
+    padding: 3rem 5rem;
+    display: flex;
+    gap: 1.5rem;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+
+.optionCard img {
+    width: 200px;
+}
+
+.option .optionCard {
+    /* background-color: yellow; */
+    width: 50%;
+}
+
+.flex1, .flex2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.flex1 {
+    align-items: flex-end;
+    margin-bottom: .7rem;
+}
+
+.option .optionCard > div > div {
+    position: relative;
+}
+
+.option .optionCard h2 {
+    position: absolute;
+    text-transform: capitalize;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: max-content; */
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.option .optionDescription {
+    /* background-color: green; */
+    width: 50%;
+}
+
+.option .optionDescription h1 {
+    font-size: 40px;
+    color: #18191F;
+    font-weight: 800;
+}
+
+.option .optionDescription p {
+    margin: 1.5rem 0;
+    font-weight: 400;
+    color: #18191F;
+}
+
+.option .optionDescription .optionBtn {
+    color: white;
+    background-color: #F4511E;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.option .optionCard img {
+    width: 100%;
+}
+
+
+
+/* @media(max-width: 1040px) { */
+@media(max-width: 900px) {
+    .option {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .option .optionCard {
+        width: 100%;
+    }
+
+    .option .optionDescription {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+@media(max-width: 700px) {
+    .option {
+        padding-inline: 1rem;
+    }
+}
