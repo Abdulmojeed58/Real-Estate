@@ -15,7 +15,7 @@ const Testimony = () => {
                 <div className={classes.circle}>
                     <BsFillPlayFill className={classes.play} />
                 </div>
-                <img src={Photo} alt="media" />
+                <img src={Photo} alt="media" loading="lazy" />
             </div>
         </div>
     )

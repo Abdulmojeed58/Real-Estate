@@ -6,10 +6,10 @@ const TestimonyComp = ({ picture, name, position }) => {
 
     return (
         <div className={classes.testimonyComp}>
-            <img src={invertedComa} alt="invertedComa" />
+            <img src={invertedComa} alt="invertedComa" loading="lazy" />
             <p className={classes.testimonyCompDesc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel pellentesque est. Curabitur at odio sit amet libero vulputate efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa, faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus fringilla finibus.</p>
             <div>
-                <img src={picture} alt={name} />
+                <img src={picture} alt={name} loading="lazy" />
                 <div>
                     <h3>{name}</h3>
                     <p>{position}</p>

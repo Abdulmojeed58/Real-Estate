@@ -13,24 +13,24 @@ const Option = () => {
                     <div className={classes.flex1}>
                         <div>
                             <h2>flexible leases</h2>
-                            <img src={photo1} alt='flexible leases' />
+                            <img src={photo1} alt='flexible leases' loading="lazy" />
                         </div>
 
                         <div>
                             <h2>7-Day happiness guaranteed</h2>
-                            <img src={photo2} alt='flexible leases' />
+                            <img src={photo2} alt='flexible leases' loading="lazy" />
                         </div>
                     </div>
 
                     <div className={classes.flex2}>
                         <div>
                             <h2>Monthly house cleaning</h2>
-                            <img src={photo3} alt='flexible leases' />
+                            <img src={photo3} alt='flexible leases' loading="lazy" />
                         </div>
 
                         <div>
                             <h2>choose your own roommate</h2>
-                            <img src={photo4} alt='flexible leases' />
+                            <img src={photo4} alt='flexible leases' loading="lazy" />
                         </div>
                     </div>
             </div>

@@ -20,46 +20,46 @@ const About = () => {
             <span className={classes.line}></span>
 
             <div>
-                <img className={classes.place} src={place} alt='place' />
+                <img className={classes.place} src={place} alt='place' loading="lazy" />
                 <ul>
                     <li>
                         <span className={classes.vector}>
-                            <img src={vector1} alt='vector1' />
+                            <img src={vector1} alt='vector1' loading="lazy" />
                         </span>
                         <span className={classes.vecName}>Pay as little as possible!</span>
                     </li>
 
                     <li>
                         <span className={classes.vector}>
-                            <img src={vector2} alt='vector2' />
+                            <img src={vector2} alt='vector2' loading="lazy" />
                         </span>
                         <span className={classes.vecName}>enjoy wisdom of community!</span>
                     </li>
 
                     <li>
                         <span className={classes.vector}>
-                            <img src={vector3} alt='vector3' />
+                            <img src={vector3} alt='vector3' loading="lazy" />
                         </span>
                         <span className={classes.vecName}>let's somebody else take care of landlord!</span>
                     </li>
 
                     <li>
                         <span className={classes.vector}>
-                            <img src={vector4} alt='vector4' />
+                            <img src={vector4} alt='vector4' loading="lazy" />
                         </span>
                         <span className={classes.vecName}>enjoy peaceful environment!</span>
                     </li>
 
                     <li>
                         <span className={classes.vector}>
-                            <img src={vector5} alt='vector5' />
+                            <img src={vector5} alt='vector5' loading="lazy" />
                         </span>
                         <span className={classes.vecName}>stay safe save money!</span>
                     </li>
 
                     <li>
                         <span className={classes.vector}>
-                            <img src={vector6} alt='vector6' />
+                            <img src={vector6} alt='vector6' loading="lazy" />
                         </span>
                         <span className={classes.vecName}>Pay fo what you use!</span>
                     </li>

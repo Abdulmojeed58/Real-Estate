@@ -10,21 +10,21 @@ const Property = ({contactName, price, coverphoto}) => {
 
     return (
         <section className={classes.property}>
-            <img src={coverphoto} alt='property-img' />
+            <img src={coverphoto} alt='property-img' loading="lazy" />
             <h2 className={classes.name}>{contactName}</h2>
             <p>Private Room</p>
             <h2 className={classes.price}>${price}/Month</h2>
             <div>
                 <div>
-                    <img src={path} alt='car' />
+                    <img src={path} alt='car' loading="lazy" />
                     <p>4</p>
                 </div>
                 <div className={classes.middle}>
-                    <img src={shower} alt='car' />
+                    <img src={shower} alt='car' loading="lazy" />
                     <p>2</p>
                 </div>
                 <div>
-                    <img src={size} alt='car' />
+                    <img src={size} alt='car' loading="lazy" />
                     <p>2</p>
                 </div>
             </div>
