@@ -51,14 +51,14 @@ const Form = () => {
                     </label>
                     <select name="city" id="city" placeholder="select city">
                         <option value="lagos">
-                            Lagos
+                            Ikeja
                         </option>
                     </select>
                 </div>
 
                 <div>
                     <label htmlFor="city">
-                        City
+                        State
                     </label>
                     <select name="city" id="city" placeholder="select city">
                         <option value="lagos">
@@ -69,11 +69,11 @@ const Form = () => {
 
                 <div>
                     <label htmlFor="city">
-                        City
+                        Room Type
                     </label>
                     <select name="city" id="city" placeholder="select city">
                         <option value="lagos">
-                            Lagos
+                            Select Room Type
                         </option>
                     </select>
                 </div>
@@ -91,11 +91,11 @@ const Form = () => {
 
                 <div className={classes.city}>
                     <label htmlFor="city">
-                        City
+                        Room Type
                     </label>
                     <select name="city" id="city" placeholder="select city">
                         <option value="lagos">
-                            Lagos
+                            Select Room Type
                         </option>
                     </select>
                 </div>
@@ -104,8 +104,7 @@ const Form = () => {
                     <label htmlFor="description">
                         Description
                     </label>
-                    <input
-                        type='text'
+                    <textarea
                         placeholder="enter description"
                         id="description"
                     />
@@ -115,11 +114,19 @@ const Form = () => {
                     <label htmlFor="photos">
                         Upload Photos
                     </label>
-                    <input
-                        type='file'
-                        placeholder="enter description"
-                        id="photos"
-                    />
+                    <div>
+                        <p>
+                            Drag your images here, or <span>browse</span>
+                        </p>
+                        <p>
+                            Supported:  JPG, JPEG, PNG
+                        </p>
+                        <input
+                            type='file'
+                            placeholder="enter description"
+                            id="photos"
+                        />
+                    </div>
                 </div>
 
                 <button>

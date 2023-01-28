@@ -1,10 +1,16 @@
 .banner {
     height: 85vh;
     padding: 1.5rem 0;
+    padding-top: .6rem;
+    background-color: rgba(0 0 0 / .3);
+    background-image: url('../../Images/Group 1881.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .image {
-    height: 85vh;
+    min-height: 85vh;
     width: 100%;
     position: absolute;
     top: 0;

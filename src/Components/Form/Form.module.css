@@ -26,7 +26,10 @@
     /* background: green; */
 }
 
-.form form input, .form form select {
+.form form input, 
+.form form select, 
+.form form textarea, 
+.form form .file > div {
     width: 100%;
     height: 35px;
     background-color: #E6E6E6;
@@ -37,7 +40,9 @@
     text-transform: capitalize;
 }
 
-.form form input::placeholder, .form form select {
+.form form input::placeholder, 
+.form form select, 
+.form form textarea::placeholder {
     color: #737373;
     font-size: .7rem;
 }
@@ -64,19 +69,49 @@
 }
 
 .form form [type='file'] {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+}
+
+.form form .file > div {
     background-color: transparent;
     width: 100%;
     border: 1px dashed #F4511E;
     height: 60px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form form .file > div p {
+    text-transform: none;
+    font-family: Poppins;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.form form .file > div p + p {
+    font-size: .6rem;
+    font-weight: 500;
+    color: rgba(0 0 0 / .5);
+}
+
+.form form .file > div span {
+    color: #F4511E;
 }
 
 .form form .description {
     flex-basis: 100%;
 }
 
-.form form .description input {
+.form form .description textarea {
     height: 100px;
+    padding-top: .5rem;
 }
 
 .form form button {

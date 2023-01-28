@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import classes from './Banner.module.css'
-import background from '../../Images/Group 1881.png'
+// import background from '../../Images/Group 1881.png'
 import { MapTiles } from "../Map";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -10,7 +10,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Banner = () => {
     return (
         <div className={classes.banner}>
-            <img src={background} alt="background" className={classes.image} />
+            {/* <img src={background} alt="background" className={classes.image} /> */}
             <Header />
             <div className={classes.data}>
                 <h1 className={classes.title}>
