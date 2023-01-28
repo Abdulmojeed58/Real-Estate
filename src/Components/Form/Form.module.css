@@ -101,6 +101,10 @@
         margin-inline: auto;
         font-size: 1.1rem;
     }
+
+    .form form {
+        width: 90%;
+    }
 }
 
 

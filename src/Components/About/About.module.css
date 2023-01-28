@@ -92,11 +92,25 @@
 
 @media(max-width: 770px) {
     .about ul {
-        /* background-color: green; */
         width: 90%;
     }
 
     .about ul li .vecName {
         width: 150px;
     }
+
+    .about li .vector {
+        width: 50%;
+        height: 130px;
+    }
+
+    .about ul li img {
+        width: 40%;
+        display: block;
+    }
+
+    .about li .vecName {
+        margin-top: 1.2rem;
+    }
+
 }

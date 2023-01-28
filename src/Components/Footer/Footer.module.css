@@ -122,13 +122,28 @@ footer .footerBottom p {
 }
 
 @media(max-width: 720px) {
+    footer {
+        padding: 2rem 2rem;
+    }
+
+    footer .lineBottom {
+        width: 100%;
+    }
+
     footer ul {
-        gap: 1rem;
-        font-size: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+        font-size: 14px;
     }
 
     footer .social {
         gap: 1rem;
+    }
+
+    footer .footerBottom p {
+        text-align: center;
+        font-size: 14px;
     }
 }
 

@@ -34,7 +34,8 @@
 }
 
 .pagination p.inActive {
-    background-color: gray;
+    background-color: #BDBDBD;
+    color: #F3F3F3;
     color: white;
 }
 
