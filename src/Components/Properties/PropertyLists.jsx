@@ -7,7 +7,7 @@ import Pagination from "./Pagination";
 
 
 const PropertyLists = () => {
-
+    const [currentId, setCurrentId] = useState(1)
     const [estates, setEstates] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
     const [postPerPage] = useState(6)
@@ -49,6 +49,36 @@ const PropertyLists = () => {
     
     const paginate = (number) => setCurrentPage(number)
 
+    const handleChange = (id) => {
+        setCurrentId(id)
+    }
+
+    const next = () => {
+        if(currentPage < estates.length/postPerPage) {
+            setCurrentPage(prevPage => {
+                    return prevPage + 1
+                })
+                setCurrentId(prevId=> {
+                    return prevId + 1
+                })
+            }
+
+            console.log(currentId)
+
+    }
+
+    const prev = () => {
+        if(currentPage > 1) {
+            setCurrentPage(prevPage => {
+                    return prevPage - 1
+                })
+                setCurrentId(prevId=> {
+                    return prevId - 1
+                })
+            }
+
+    }
+
     const properties = currentPost.map((estate)=>{
 
         return (
@@ -72,7 +102,7 @@ const PropertyLists = () => {
             <div className={classes.properties}>
                 {properties}
             </div>
-            <Pagination postPerPage={postPerPage} totalPost={estates.length} paginate={paginate} />
+            <Pagination postPerPage={postPerPage} totalPost={estates.length} paginate={paginate} next={next} prev={prev} handleChange={handleChange} currentId={currentId} />
         </div>
     )
 }

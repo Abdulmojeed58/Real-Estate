@@ -1,5 +1,5 @@
 .property {
-    /* margin-top: 2rem; */
+    font-family: 'DM Sans';
     width: 300px;
     background-color: white;
     border-radius: 1rem;
@@ -54,4 +54,10 @@
 .property .middle {
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+@media(max-width: 680px) {
+    .property {
+        width: 400px;
+    }
 }

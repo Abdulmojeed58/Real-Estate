@@ -1,10 +1,9 @@
 .about {
-    min-height: 75vh;
+    font-family: Inter;
+    /* min-height: 75vh; */
     width: 85vw;
     margin-inline: auto;
-    /* margin-top: 2rem; */
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
+    padding: 5rem 0;
     /* background-color: red; */
 }
 
@@ -78,10 +77,26 @@
         justify-content: center;
         align-items: center;
     }
+
+    .about ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about ul li .vecName {
+        text-align: center;
+    }
 }
 
 @media(max-width: 770px) {
     .about ul {
-        width: 80%;
+        /* background-color: green; */
+        width: 90%;
+    }
+
+    .about ul li .vecName {
+        width: 150px;
     }
 }

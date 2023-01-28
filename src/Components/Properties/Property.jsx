@@ -21,11 +21,11 @@ const Property = ({contactName, price, coverphoto}) => {
                 </div>
                 <div className={classes.middle}>
                     <img src={shower} alt='car' />
-                    <p>4</p>
+                    <p>2</p>
                 </div>
                 <div>
                     <img src={size} alt='car' />
-                    <p>4</p>
+                    <p>2</p>
                 </div>
             </div>
         </section>

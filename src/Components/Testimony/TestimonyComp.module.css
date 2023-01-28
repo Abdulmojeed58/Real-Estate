@@ -1,0 +1,43 @@
+.testimonyComp {
+    /* background-color: rgba(244, 81, 30, .5); */
+    font-family: Inter;
+    font-weight: 400;
+    padding: 3.5rem;
+    position: relative;
+}
+
+.testimonyComp > img {
+    /* background-color: green; */
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.testimonyComp .testimonyCompDesc {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.testimonyComp > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.testimonyComp > div img {
+    width: 70px;
+}
+
+.testimonyComp > div h3 {
+    color: #F4511E;
+    font-size: 16px;
+}
+.testimonyComp > div p {
+    color: #18191F;
+    font-size: 16px;
+}

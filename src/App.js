@@ -4,6 +4,9 @@ import About from './Components/About/About';
 import './App.css';
 import PropertyLists from './Components/Properties/PropertyLists';
 import Option from './Components/Option/Option';
+import Form from './Components/Form/Form';
+import Testimony from './Components/Testimony/Testimony';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
      <About />
      <PropertyLists />
      <Option />
+     <Form />
+     <Testimony />
+     <Footer />
     </div>
   );
 }

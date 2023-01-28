@@ -20,7 +20,7 @@
 
 .flex1, .flex2 {
     display: flex;
-    gap: 1rem;
+    /* gap: .5rem; */
     justify-content: center;
 }
 
@@ -42,8 +42,9 @@
     /* width: max-content; */
     color: white;
     font-size: 1.1rem;
-    width: 100%;
+    width: 70%;
     text-align: center;
+    /* background-color: red; */
 }
 
 .option .optionDescription {
@@ -76,7 +77,7 @@
 }
 
 .option .optionCard img {
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -105,5 +106,22 @@
 @media(max-width: 700px) {
     .option {
         padding-inline: 1rem;
+    }
+
+    .flex1, .flex2 {
+        gap: 1rem;
+    }
+
+    .option .optionCard img {
+        width: 100%;
+    }
+
+    .option .optionDescription {
+        width: 90%;
+    }
+
+
+    .option .optionCard h2 {
+        width: 100%;
     }
 }

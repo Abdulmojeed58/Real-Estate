@@ -1,4 +1,5 @@
 .pagination {
+    font-family: Montserrat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,5 +26,15 @@
 
 .pagination .next {
     border: none;
+}
+
+.pagination p.active {
+    background-color: #F4511E;
+    color: white;
+}
+
+.pagination p.inActive {
+    background-color: gray;
+    color: white;
 }
 

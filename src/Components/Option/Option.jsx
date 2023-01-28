@@ -24,13 +24,13 @@ const Option = () => {
 
                     <div className={classes.flex2}>
                         <div>
-                            <h2>choose your own roommate</h2>
-                            <img src={photo4} alt='flexible leases' />
+                            <h2>Monthly house cleaning</h2>
+                            <img src={photo3} alt='flexible leases' />
                         </div>
 
                         <div>
-                            <h2>Monthly house cleaning</h2>
-                            <img src={photo3} alt='flexible leases' />
+                            <h2>choose your own roommate</h2>
+                            <img src={photo4} alt='flexible leases' />
                         </div>
                     </div>
             </div>

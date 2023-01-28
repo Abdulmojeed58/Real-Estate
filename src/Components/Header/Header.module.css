@@ -50,7 +50,7 @@
 @media(max-width: 750px) {
     .navbar {
         /* display: none; */
-        margin-inline: 3rem;
+        margin-inline: 2rem;
     }
 
     .menu {
